@@ -1,0 +1,17 @@
+{
+  "name": "student-progress-backend",
+  "version": "1.0.0",
+  "description": "Backend API for student consistency and progress tracking",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "express": "^4.21.1",
+    "nanoid": "^5.0.8"
+  }
+}
