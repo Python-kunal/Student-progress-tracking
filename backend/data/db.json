@@ -1760,6 +1760,242 @@
           "endDate": "2026-04-27"
         }
       ]
+    },
+    {
+      "id": "learner_8Aulqp-U",
+      "name": "Ritesh maurya",
+      "track": "LLMs",
+      "goal": "how chatgpt works",
+      "weeklyHours": 4,
+      "github": null,
+      "consistency": 65,
+      "coins": 80,
+      "createdAt": "2026-03-29T11:10:37.144Z",
+      "plan": [
+        {
+          "id": "module_iFkjYd",
+          "module": "Intro to: LLMs — How ChatGPT works & What is RAG? | Retrieval-Augmented Generation Explained 🔥",
+          "track": "LLMs",
+          "plannedHours": 2,
+          "startDate": "2026-03-29",
+          "endDate": "2026-04-02"
+        },
+        {
+          "id": "module_khr4PA",
+          "module": "Core Breakdown (CodeWithHarry)",
+          "track": "LLMs",
+          "plannedHours": 2,
+          "startDate": "2026-04-03",
+          "endDate": "2026-04-07"
+        },
+        {
+          "id": "module_FoAK18",
+          "module": "Practical Applications",
+          "track": "LLMs",
+          "plannedHours": 2,
+          "startDate": "2026-04-08",
+          "endDate": "2026-04-12"
+        },
+        {
+          "id": "module_Ntyhi_",
+          "module": "Advanced Concepts",
+          "track": "LLMs",
+          "plannedHours": 2,
+          "startDate": "2026-04-13",
+          "endDate": "2026-04-17"
+        },
+        {
+          "id": "module_WsLGGd",
+          "module": "Mini Project: LLMs — How ChatGPT works & What is RAG? | Retrieval-Augmented Generation Explained 🔥",
+          "track": "LLMs",
+          "plannedHours": 2,
+          "startDate": "2026-04-18",
+          "endDate": "2026-04-22"
+        },
+        {
+          "id": "module_GLAViw",
+          "module": "Final Review & Quiz",
+          "track": "LLMs",
+          "plannedHours": 2,
+          "startDate": "2026-04-23",
+          "endDate": "2026-04-27"
+        }
+      ]
+    },
+    {
+      "id": "learner_dRbTp9Mb",
+      "name": "Arpit Dubey",
+      "track": "Web Development",
+      "goal": "building project",
+      "weeklyHours": 4,
+      "github": "Python-kunal",
+      "consistency": 65,
+      "coins": 130,
+      "createdAt": "2026-03-29T11:18:19.622Z",
+      "plan": [
+        {
+          "id": "module_aBVgYh",
+          "module": "Intro to: Claude Code is Amazing!",
+          "track": "Web Development",
+          "plannedHours": 2,
+          "startDate": "2026-03-29",
+          "endDate": "2026-04-02"
+        },
+        {
+          "id": "module_hQCOsU",
+          "module": "Core Breakdown (CodeWithHarry)",
+          "track": "Web Development",
+          "plannedHours": 2,
+          "startDate": "2026-04-03",
+          "endDate": "2026-04-07"
+        },
+        {
+          "id": "module_y9PjH2",
+          "module": "Practical Applications",
+          "track": "Web Development",
+          "plannedHours": 2,
+          "startDate": "2026-04-08",
+          "endDate": "2026-04-12"
+        },
+        {
+          "id": "module_s3EetM",
+          "module": "Advanced Concepts",
+          "track": "Web Development",
+          "plannedHours": 2,
+          "startDate": "2026-04-13",
+          "endDate": "2026-04-17"
+        },
+        {
+          "id": "module_qaWrYw",
+          "module": "Mini Project: Claude Code is Amazing!",
+          "track": "Web Development",
+          "plannedHours": 2,
+          "startDate": "2026-04-18",
+          "endDate": "2026-04-22"
+        },
+        {
+          "id": "module_iSNCyO",
+          "module": "Final Review & Quiz",
+          "track": "Web Development",
+          "plannedHours": 2,
+          "startDate": "2026-04-23",
+          "endDate": "2026-04-27"
+        }
+      ],
+      "planHistory": [
+        {
+          "id": "history_nqCo2vdF",
+          "track": "LLms",
+          "goal": "How chatgpt works",
+          "plan": [
+            {
+              "id": "module_ydiMWU",
+              "module": "Intro to: LLMs — How ChatGPT works & What is RAG? | Retrieval-Augmented Generation Explained 🔥",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-03-29",
+              "endDate": "2026-04-02"
+            },
+            {
+              "id": "module_9QTMo9",
+              "module": "Core Breakdown (CodeWithHarry)",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-03",
+              "endDate": "2026-04-07"
+            },
+            {
+              "id": "module_-wdkui",
+              "module": "Practical Applications",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-08",
+              "endDate": "2026-04-12"
+            },
+            {
+              "id": "module_o3f3w5",
+              "module": "Advanced Concepts",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-13",
+              "endDate": "2026-04-17"
+            },
+            {
+              "id": "module_jhhXY0",
+              "module": "Mini Project: LLMs — How ChatGPT works & What is RAG? | Retrieval-Augmented Generation Explained 🔥",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-18",
+              "endDate": "2026-04-22"
+            },
+            {
+              "id": "module_7E4j4S",
+              "module": "Final Review & Quiz",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-23",
+              "endDate": "2026-04-27"
+            }
+          ],
+          "archivedAt": "2026-03-29T11:20:22.764Z"
+        },
+        {
+          "id": "history_dzalSeEJ",
+          "track": "LLms",
+          "goal": "How chatgpt works",
+          "plan": [
+            {
+              "id": "module_88b6SU",
+              "module": "Learning Foundations",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-03-29",
+              "endDate": "2026-04-02"
+            },
+            {
+              "id": "module_k2frwC",
+              "module": "Core Concepts",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-03",
+              "endDate": "2026-04-07"
+            },
+            {
+              "id": "module_8V7xux",
+              "module": "Hands-on Practice",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-08",
+              "endDate": "2026-04-12"
+            },
+            {
+              "id": "module_4E4CSu",
+              "module": "Mini Project",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-13",
+              "endDate": "2026-04-17"
+            },
+            {
+              "id": "module_6Qla41",
+              "module": "Mock Assessment",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-18",
+              "endDate": "2026-04-22"
+            },
+            {
+              "id": "module_ARvFyo",
+              "module": "Portfolio Polish",
+              "track": "LLms",
+              "plannedHours": 2,
+              "startDate": "2026-04-23",
+              "endDate": "2026-04-27"
+            }
+          ],
+          "archivedAt": "2026-03-29T11:22:56.061Z"
+        }
+      ]
     }
   ],
   "tasks": [
@@ -2916,6 +3152,126 @@
     {
       "id": "XbeQgaJ_CBvd784ZylNIr",
       "learnerId": "learner_5s2MAM_o",
+      "title": "Complete Final Review & Quiz",
+      "module": "Final Review & Quiz",
+      "dueDate": "2026-04-27",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_W8i6gLAv",
+      "learnerId": "learner_8Aulqp-U",
+      "title": "Complete Intro to: LLMs — How ChatGPT works & What is RAG? | Retrieval-Augmented Generation Explained 🔥",
+      "module": "Intro to: LLMs — How ChatGPT works & What is RAG? | Retrieval-Augmented Generation Explained 🔥",
+      "dueDate": "2026-04-02",
+      "estimatedMinutes": 120,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "task_XtmgLZWK",
+      "learnerId": "learner_8Aulqp-U",
+      "title": "Complete Core Breakdown (CodeWithHarry)",
+      "module": "Core Breakdown (CodeWithHarry)",
+      "dueDate": "2026-04-07",
+      "estimatedMinutes": 120,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "task_pnVk7_-A",
+      "learnerId": "learner_8Aulqp-U",
+      "title": "Complete Practical Applications",
+      "module": "Practical Applications",
+      "dueDate": "2026-04-12",
+      "estimatedMinutes": 120,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "task_behRdGLL",
+      "learnerId": "learner_8Aulqp-U",
+      "title": "Complete Advanced Concepts",
+      "module": "Advanced Concepts",
+      "dueDate": "2026-04-17",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_bHAX8oL_",
+      "learnerId": "learner_8Aulqp-U",
+      "title": "Complete Mini Project: LLMs — How ChatGPT works & What is RAG? | Retrieval-Augmented Generation Explained 🔥",
+      "module": "Mini Project: LLMs — How ChatGPT works & What is RAG? | Retrieval-Augmented Generation Explained 🔥",
+      "dueDate": "2026-04-22",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_g4WVGc-5",
+      "learnerId": "learner_8Aulqp-U",
+      "title": "Complete Final Review & Quiz",
+      "module": "Final Review & Quiz",
+      "dueDate": "2026-04-27",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "F1P762i1l2297-KJZ9k9Q",
+      "learnerId": "learner_dRbTp9Mb",
+      "title": "Complete Intro to: Claude Code is Amazing!",
+      "module": "Intro to: Claude Code is Amazing!",
+      "dueDate": "2026-04-02",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "_ERVfQRxti-METoHi7zLA",
+      "learnerId": "learner_dRbTp9Mb",
+      "title": "Complete Core Breakdown (CodeWithHarry)",
+      "module": "Core Breakdown (CodeWithHarry)",
+      "dueDate": "2026-04-07",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "oCV8h7DYoNSQvXeqUOO1x",
+      "learnerId": "learner_dRbTp9Mb",
+      "title": "Complete Practical Applications",
+      "module": "Practical Applications",
+      "dueDate": "2026-04-12",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "y3QFaEwLefJnreBAhdIbA",
+      "learnerId": "learner_dRbTp9Mb",
+      "title": "Complete Advanced Concepts",
+      "module": "Advanced Concepts",
+      "dueDate": "2026-04-17",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "eM1_nN9JJfwDvJo0Z1es0",
+      "learnerId": "learner_dRbTp9Mb",
+      "title": "Complete Mini Project: Claude Code is Amazing!",
+      "module": "Mini Project: Claude Code is Amazing!",
+      "dueDate": "2026-04-22",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "sgx0FFDJLLz8-n9xHCnwQ",
+      "learnerId": "learner_dRbTp9Mb",
       "title": "Complete Final Review & Quiz",
       "module": "Final Review & Quiz",
       "dueDate": "2026-04-27",
@@ -9048,6 +9404,1098 @@
       "date": "2026-03-29",
       "minutes": 0,
       "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2025-12-29",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2025-12-30",
+      "minutes": 111,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2025-12-31",
+      "minutes": 3,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-01",
+      "minutes": 22,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-02",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-03",
+      "minutes": 29,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-04",
+      "minutes": 96,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-05",
+      "minutes": 56,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-06",
+      "minutes": 36,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-07",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-08",
+      "minutes": 56,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-09",
+      "minutes": 130,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-10",
+      "minutes": 128,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-11",
+      "minutes": 140,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-12",
+      "minutes": 134,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-13",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-14",
+      "minutes": 73,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-15",
+      "minutes": 10,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-16",
+      "minutes": 138,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-17",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-18",
+      "minutes": 1,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-19",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-20",
+      "minutes": 127,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-21",
+      "minutes": 92,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-22",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-23",
+      "minutes": 28,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-24",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-25",
+      "minutes": 5,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-26",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-27",
+      "minutes": 77,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-28",
+      "minutes": 55,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-29",
+      "minutes": 21,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-30",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-01-31",
+      "minutes": 17,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-01",
+      "minutes": 128,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-02",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-03",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-04",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-05",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-06",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-07",
+      "minutes": 98,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-08",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-09",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-10",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-11",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-12",
+      "minutes": 41,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-13",
+      "minutes": 49,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-14",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-15",
+      "minutes": 34,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-16",
+      "minutes": 39,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-17",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-18",
+      "minutes": 74,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-19",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-20",
+      "minutes": 92,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-21",
+      "minutes": 72,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-22",
+      "minutes": 130,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-23",
+      "minutes": 85,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-24",
+      "minutes": 94,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-25",
+      "minutes": 106,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-26",
+      "minutes": 47,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-27",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-02-28",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-01",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-02",
+      "minutes": 30,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-03",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-04",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-05",
+      "minutes": 21,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-06",
+      "minutes": 27,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-07",
+      "minutes": 33,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-08",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-09",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-10",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-11",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-12",
+      "minutes": 135,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-13",
+      "minutes": 64,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-14",
+      "minutes": 32,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-15",
+      "minutes": 96,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-16",
+      "minutes": 7,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-17",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-18",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-19",
+      "minutes": 81,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-20",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-21",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-22",
+      "minutes": 86,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-23",
+      "minutes": 31,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-24",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-25",
+      "minutes": 103,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-26",
+      "minutes": 105,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-27",
+      "minutes": 144,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-28",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_8Aulqp-U",
+      "date": "2026-03-29",
+      "minutes": 90,
+      "completionRate": 50
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2025-12-29",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2025-12-30",
+      "minutes": 110,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2025-12-31",
+      "minutes": 27,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-01",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-02",
+      "minutes": 109,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-03",
+      "minutes": 88,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-04",
+      "minutes": 92,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-05",
+      "minutes": 9,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-06",
+      "minutes": 89,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-07",
+      "minutes": 10,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-08",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-09",
+      "minutes": 24,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-10",
+      "minutes": 109,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-11",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-12",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-13",
+      "minutes": 63,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-14",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-15",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-16",
+      "minutes": 21,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-17",
+      "minutes": 12,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-18",
+      "minutes": 51,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-19",
+      "minutes": 29,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-20",
+      "minutes": 147,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-21",
+      "minutes": 147,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-22",
+      "minutes": 118,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-23",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-24",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-25",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-26",
+      "minutes": 6,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-27",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-28",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-29",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-30",
+      "minutes": 63,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-01-31",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-01",
+      "minutes": 56,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-02",
+      "minutes": 68,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-03",
+      "minutes": 125,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-04",
+      "minutes": 47,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-05",
+      "minutes": 73,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-06",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-07",
+      "minutes": 25,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-08",
+      "minutes": 36,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-09",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-10",
+      "minutes": 141,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-11",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-12",
+      "minutes": 131,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-13",
+      "minutes": 135,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-14",
+      "minutes": 45,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-15",
+      "minutes": 88,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-16",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-17",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-18",
+      "minutes": 136,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-19",
+      "minutes": 38,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-20",
+      "minutes": 6,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-21",
+      "minutes": 100,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-22",
+      "minutes": 82,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-23",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-24",
+      "minutes": 84,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-25",
+      "minutes": 40,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-26",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-27",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-02-28",
+      "minutes": 96,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-01",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-02",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-03",
+      "minutes": 65,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-04",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-05",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-06",
+      "minutes": 37,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-07",
+      "minutes": 23,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-08",
+      "minutes": 55,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-09",
+      "minutes": 115,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-10",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-11",
+      "minutes": 79,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-12",
+      "minutes": 92,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-13",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-14",
+      "minutes": 112,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-15",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-16",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-17",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-18",
+      "minutes": 49,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-19",
+      "minutes": 90,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-20",
+      "minutes": 29,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-21",
+      "minutes": 114,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-22",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-23",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-24",
+      "minutes": 44,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-25",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-26",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-27",
+      "minutes": 76,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-28",
+      "minutes": 7,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_dRbTp9Mb",
+      "date": "2026-03-29",
+      "minutes": 180,
+      "completionRate": 100
     }
   ]
 }
