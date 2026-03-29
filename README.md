@@ -22,18 +22,18 @@ A modern, AI-powered full-stack platform designed to solve student consistency c
 ## 💻 Tech Stack
 
 - **Frontend:** React + Vite + Framer Motion + Recharts + React Markdown
-- **Backend:** Node.js + Express + Google Gemini AI Setup
-- **Architecture:** Lightweight file-based local JSON Database (\db.json\) ideal for rapid prototyping and completely independent of third-party DB setups.
+- **Backend:** Node.js + Express + Rule-Based Mock AI Engine (For Hackathon Reliability)
+- **Architecture:** Lightweight file-based local JSON Database (`db.json`) ideal for rapid prototyping and completely independent of third-party DB setups.
 
 ## 🚀 How to Run Locally
 
 ### 1. Start Backend (Terminal 1)
-\\\ash
+```bash
 cd backend
 npm install
 npm start  # Runs on http://localhost:4000
-\\\
-*(Ensure you have your .env ready with a \GEMINI_API_KEY\ if you're using the AI features!)*
+```
+*(No `.env` or external API keys required! This uses an ultra-fast local mock rule-engine for instantaneous demo responses).*
 
 ### 2. Start Frontend (Terminal 2)
 \\\ash
