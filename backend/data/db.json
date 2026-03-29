@@ -204,11 +204,67 @@
             }
           ],
           "archivedAt": "2026-03-29T08:26:30.344Z"
+        },
+        {
+          "id": "history_umOlzwfj",
+          "track": "ai masterclass",
+          "goal": "learn chatgpt prompt engineering",
+          "plan": [
+            {
+              "id": "module_XQXkOI",
+              "module": "Learning Foundations",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-03-29",
+              "endDate": "2026-04-02"
+            },
+            {
+              "id": "module_p867M6",
+              "module": "Core Concepts",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-03",
+              "endDate": "2026-04-07"
+            },
+            {
+              "id": "module_10gaiF",
+              "module": "Hands-on Practice",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-08",
+              "endDate": "2026-04-12"
+            },
+            {
+              "id": "module_WXHeyJ",
+              "module": "Mini Project",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-13",
+              "endDate": "2026-04-17"
+            },
+            {
+              "id": "module_WathY4",
+              "module": "Mock Assessment",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-18",
+              "endDate": "2026-04-22"
+            },
+            {
+              "id": "module_8nHKad",
+              "module": "Portfolio Polish",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-23",
+              "endDate": "2026-04-27"
+            }
+          ],
+          "archivedAt": "2026-03-29T10:30:42.784Z"
         }
       ],
       "plan": [
         {
-          "id": "module_XQXkOI",
+          "id": "module_eFmzuo",
           "module": "Learning Foundations",
           "track": "ai masterclass",
           "plannedHours": 4,
@@ -216,7 +272,7 @@
           "endDate": "2026-04-02"
         },
         {
-          "id": "module_p867M6",
+          "id": "module_wnoX9l",
           "module": "Core Concepts",
           "track": "ai masterclass",
           "plannedHours": 4,
@@ -224,7 +280,7 @@
           "endDate": "2026-04-07"
         },
         {
-          "id": "module_10gaiF",
+          "id": "module_dOAJQs",
           "module": "Hands-on Practice",
           "track": "ai masterclass",
           "plannedHours": 4,
@@ -232,7 +288,7 @@
           "endDate": "2026-04-12"
         },
         {
-          "id": "module_WXHeyJ",
+          "id": "module_oxyJVk",
           "module": "Mini Project",
           "track": "ai masterclass",
           "plannedHours": 4,
@@ -240,7 +296,7 @@
           "endDate": "2026-04-17"
         },
         {
-          "id": "module_WathY4",
+          "id": "module_6Ni3ET",
           "module": "Mock Assessment",
           "track": "ai masterclass",
           "plannedHours": 4,
@@ -248,7 +304,7 @@
           "endDate": "2026-04-22"
         },
         {
-          "id": "module_8nHKad",
+          "id": "module_MrCwK3",
           "module": "Portfolio Polish",
           "track": "ai masterclass",
           "plannedHours": 4,
@@ -257,7 +313,7 @@
         }
       ],
       "github": "Python-kunal",
-      "coins": 190
+      "coins": 270
     },
     {
       "id": "learner_SMxNrH_K",
@@ -825,8 +881,8 @@
     {
       "id": "learner_5s2MAM_o",
       "name": "eren yeager",
-      "track": "Web Development",
-      "goal": "learning python basics",
+      "track": "replit",
+      "goal": "no need to learn code",
       "weeklyHours": 4,
       "github": null,
       "consistency": 65,
@@ -834,52 +890,110 @@
       "createdAt": "2026-03-28T19:36:17.242Z",
       "plan": [
         {
-          "id": "module_3Ak78d",
-          "module": "Intro to: Python Tutorial For Beginners in Hindi | Complete Python Course 🔥",
-          "track": "Web Development",
+          "id": "module_C8aDPY",
+          "module": "Intro to: I Tried Replit Agent 4 - Is It Worth the Hype?",
+          "track": "replit",
           "plannedHours": 2,
           "startDate": "2026-03-29",
           "endDate": "2026-04-02"
         },
         {
-          "id": "module_pxI3UC",
+          "id": "module_LZpXMu",
           "module": "Core Breakdown (CodeWithHarry)",
-          "track": "Web Development",
+          "track": "replit",
           "plannedHours": 2,
           "startDate": "2026-04-03",
           "endDate": "2026-04-07"
         },
         {
-          "id": "module_5Z_sd2",
+          "id": "module_DP_OpL",
           "module": "Practical Applications",
-          "track": "Web Development",
+          "track": "replit",
           "plannedHours": 2,
           "startDate": "2026-04-08",
           "endDate": "2026-04-12"
         },
         {
-          "id": "module_tWrpxi",
+          "id": "module_YLbHPy",
           "module": "Advanced Concepts",
-          "track": "Web Development",
+          "track": "replit",
           "plannedHours": 2,
           "startDate": "2026-04-13",
           "endDate": "2026-04-17"
         },
         {
-          "id": "module_kN78Nm",
-          "module": "Mini Project: Python Tutorial For Beginners in Hindi | Complete Python Course 🔥",
-          "track": "Web Development",
+          "id": "module_YskCVP",
+          "module": "Mini Project: I Tried Replit Agent 4 - Is It Worth the Hype?",
+          "track": "replit",
           "plannedHours": 2,
           "startDate": "2026-04-18",
           "endDate": "2026-04-22"
         },
         {
-          "id": "module_htYe0-",
+          "id": "module_CHuD6Y",
           "module": "Final Review & Quiz",
-          "track": "Web Development",
+          "track": "replit",
           "plannedHours": 2,
           "startDate": "2026-04-23",
           "endDate": "2026-04-27"
+        }
+      ],
+      "planHistory": [
+        {
+          "id": "history_EQnHvPeD",
+          "track": "Web Development",
+          "goal": "learning python basics",
+          "plan": [
+            {
+              "id": "module_3Ak78d",
+              "module": "Intro to: Python Tutorial For Beginners in Hindi | Complete Python Course 🔥",
+              "track": "Web Development",
+              "plannedHours": 2,
+              "startDate": "2026-03-29",
+              "endDate": "2026-04-02"
+            },
+            {
+              "id": "module_pxI3UC",
+              "module": "Core Breakdown (CodeWithHarry)",
+              "track": "Web Development",
+              "plannedHours": 2,
+              "startDate": "2026-04-03",
+              "endDate": "2026-04-07"
+            },
+            {
+              "id": "module_5Z_sd2",
+              "module": "Practical Applications",
+              "track": "Web Development",
+              "plannedHours": 2,
+              "startDate": "2026-04-08",
+              "endDate": "2026-04-12"
+            },
+            {
+              "id": "module_tWrpxi",
+              "module": "Advanced Concepts",
+              "track": "Web Development",
+              "plannedHours": 2,
+              "startDate": "2026-04-13",
+              "endDate": "2026-04-17"
+            },
+            {
+              "id": "module_kN78Nm",
+              "module": "Mini Project: Python Tutorial For Beginners in Hindi | Complete Python Course 🔥",
+              "track": "Web Development",
+              "plannedHours": 2,
+              "startDate": "2026-04-18",
+              "endDate": "2026-04-22"
+            },
+            {
+              "id": "module_htYe0-",
+              "module": "Final Review & Quiz",
+              "track": "Web Development",
+              "plannedHours": 2,
+              "startDate": "2026-04-23",
+              "endDate": "2026-04-27"
+            }
+          ],
+          "archivedAt": "2026-03-29T10:49:43.923Z"
         }
       ]
     },
@@ -2310,66 +2424,6 @@
       "score": null
     },
     {
-      "id": "task_xvkkWKGD",
-      "learnerId": "learner_5s2MAM_o",
-      "title": "Complete Intro to: Python Tutorial For Beginners in Hindi | Complete Python Course 🔥",
-      "module": "Intro to: Python Tutorial For Beginners in Hindi | Complete Python Course 🔥",
-      "dueDate": "2026-04-02",
-      "estimatedMinutes": 120,
-      "completed": true,
-      "score": null
-    },
-    {
-      "id": "task_ArzARc8I",
-      "learnerId": "learner_5s2MAM_o",
-      "title": "Complete Core Breakdown (CodeWithHarry)",
-      "module": "Core Breakdown (CodeWithHarry)",
-      "dueDate": "2026-04-07",
-      "estimatedMinutes": 120,
-      "completed": true,
-      "score": null
-    },
-    {
-      "id": "task_DhsNouJT",
-      "learnerId": "learner_5s2MAM_o",
-      "title": "Complete Practical Applications",
-      "module": "Practical Applications",
-      "dueDate": "2026-04-12",
-      "estimatedMinutes": 120,
-      "completed": false,
-      "score": null
-    },
-    {
-      "id": "task_K8FTAI5G",
-      "learnerId": "learner_5s2MAM_o",
-      "title": "Complete Advanced Concepts",
-      "module": "Advanced Concepts",
-      "dueDate": "2026-04-17",
-      "estimatedMinutes": 120,
-      "completed": false,
-      "score": null
-    },
-    {
-      "id": "task_Inm2SlxE",
-      "learnerId": "learner_5s2MAM_o",
-      "title": "Complete Mini Project: Python Tutorial For Beginners in Hindi | Complete Python Course 🔥",
-      "module": "Mini Project: Python Tutorial For Beginners in Hindi | Complete Python Course 🔥",
-      "dueDate": "2026-04-22",
-      "estimatedMinutes": 120,
-      "completed": false,
-      "score": null
-    },
-    {
-      "id": "task_EuD9cYgw",
-      "learnerId": "learner_5s2MAM_o",
-      "title": "Complete Final Review & Quiz",
-      "module": "Final Review & Quiz",
-      "dueDate": "2026-04-27",
-      "estimatedMinutes": 120,
-      "completed": false,
-      "score": null
-    },
-    {
       "id": "task_pMPrOSV7",
       "learnerId": "learner_1lDQZ3z3",
       "title": "Complete DOM & Semantic HTML",
@@ -2690,66 +2744,6 @@
       "score": null
     },
     {
-      "id": "MFijMLHBHQyiKexrO4PIw",
-      "learnerId": "learner_PdeopwkH",
-      "title": "Complete Learning Foundations",
-      "module": "Learning Foundations",
-      "dueDate": "2026-04-02",
-      "estimatedMinutes": 240,
-      "completed": false,
-      "score": null
-    },
-    {
-      "id": "_TOFgHAO4G7ipFZbFGH22",
-      "learnerId": "learner_PdeopwkH",
-      "title": "Complete Core Concepts",
-      "module": "Core Concepts",
-      "dueDate": "2026-04-07",
-      "estimatedMinutes": 240,
-      "completed": false,
-      "score": null
-    },
-    {
-      "id": "fLi8Ewrxi_Hfksv6RndkC",
-      "learnerId": "learner_PdeopwkH",
-      "title": "Complete Hands-on Practice",
-      "module": "Hands-on Practice",
-      "dueDate": "2026-04-12",
-      "estimatedMinutes": 240,
-      "completed": false,
-      "score": null
-    },
-    {
-      "id": "7-NIgcskEZl45fEMH4jsN",
-      "learnerId": "learner_PdeopwkH",
-      "title": "Complete Mini Project",
-      "module": "Mini Project",
-      "dueDate": "2026-04-17",
-      "estimatedMinutes": 240,
-      "completed": false,
-      "score": null
-    },
-    {
-      "id": "sHuvoOQ4FFaFJ_no4IAXD",
-      "learnerId": "learner_PdeopwkH",
-      "title": "Complete Mock Assessment",
-      "module": "Mock Assessment",
-      "dueDate": "2026-04-22",
-      "estimatedMinutes": 240,
-      "completed": false,
-      "score": null
-    },
-    {
-      "id": "cu9jj5Nm11zRJtl6yYgM3",
-      "learnerId": "learner_PdeopwkH",
-      "title": "Complete Portfolio Polish",
-      "module": "Portfolio Polish",
-      "dueDate": "2026-04-27",
-      "estimatedMinutes": 240,
-      "completed": false,
-      "score": null
-    },
-    {
       "id": "task_5nBsm7BX",
       "learnerId": "learner_KIvQUMB-",
       "title": "Complete Intro to: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
@@ -2802,6 +2796,126 @@
     {
       "id": "task_1I4YrMHe",
       "learnerId": "learner_KIvQUMB-",
+      "title": "Complete Final Review & Quiz",
+      "module": "Final Review & Quiz",
+      "dueDate": "2026-04-27",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "201d4UDixtzCUanIgxnkt",
+      "learnerId": "learner_PdeopwkH",
+      "title": "Complete Learning Foundations",
+      "module": "Learning Foundations",
+      "dueDate": "2026-04-02",
+      "estimatedMinutes": 240,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "-FcgvjcFDbk72DiHYI66k",
+      "learnerId": "learner_PdeopwkH",
+      "title": "Complete Core Concepts",
+      "module": "Core Concepts",
+      "dueDate": "2026-04-07",
+      "estimatedMinutes": 240,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "gPv1CiXxUeCKhBwfMIKhl",
+      "learnerId": "learner_PdeopwkH",
+      "title": "Complete Hands-on Practice",
+      "module": "Hands-on Practice",
+      "dueDate": "2026-04-12",
+      "estimatedMinutes": 240,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "-ars9XrpLNc2cZi8MTAAQ",
+      "learnerId": "learner_PdeopwkH",
+      "title": "Complete Mini Project",
+      "module": "Mini Project",
+      "dueDate": "2026-04-17",
+      "estimatedMinutes": 240,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "22cDfW0ED9iceY_ToaY6B",
+      "learnerId": "learner_PdeopwkH",
+      "title": "Complete Mock Assessment",
+      "module": "Mock Assessment",
+      "dueDate": "2026-04-22",
+      "estimatedMinutes": 240,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "rwrElBQiTbagxETwYah4g",
+      "learnerId": "learner_PdeopwkH",
+      "title": "Complete Portfolio Polish",
+      "module": "Portfolio Polish",
+      "dueDate": "2026-04-27",
+      "estimatedMinutes": 240,
+      "completed": true,
+      "score": null
+    },
+    {
+      "id": "3WIIS-PrOwzpPycqPEAa6",
+      "learnerId": "learner_5s2MAM_o",
+      "title": "Complete Intro to: I Tried Replit Agent 4 - Is It Worth the Hype?",
+      "module": "Intro to: I Tried Replit Agent 4 - Is It Worth the Hype?",
+      "dueDate": "2026-04-02",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "R8xGs9XQlo1zjrBINGSAH",
+      "learnerId": "learner_5s2MAM_o",
+      "title": "Complete Core Breakdown (CodeWithHarry)",
+      "module": "Core Breakdown (CodeWithHarry)",
+      "dueDate": "2026-04-07",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "LX2m4Ez6gEdrsddLsHjDy",
+      "learnerId": "learner_5s2MAM_o",
+      "title": "Complete Practical Applications",
+      "module": "Practical Applications",
+      "dueDate": "2026-04-12",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "XE1n5npx-TklvSxXsv5fg",
+      "learnerId": "learner_5s2MAM_o",
+      "title": "Complete Advanced Concepts",
+      "module": "Advanced Concepts",
+      "dueDate": "2026-04-17",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "w5gVf7vpre0FjyIxACI2L",
+      "learnerId": "learner_5s2MAM_o",
+      "title": "Complete Mini Project: I Tried Replit Agent 4 - Is It Worth the Hype?",
+      "module": "Mini Project: I Tried Replit Agent 4 - Is It Worth the Hype?",
+      "dueDate": "2026-04-22",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "XbeQgaJ_CBvd784ZylNIr",
+      "learnerId": "learner_5s2MAM_o",
       "title": "Complete Final Review & Quiz",
       "module": "Final Review & Quiz",
       "dueDate": "2026-04-27",
