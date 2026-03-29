@@ -6,11 +6,18 @@ A modern, AI-powered full-stack platform designed to solve student consistency c
 
 - **Auth Modes (Login vs. Onboarding):** Lightning-fast dual mode onboarding. Returning users can jump back into their dashboard just by entering their exact previous name. New users get a full comprehensive onboarding flow!
 - **AI-Powered Learning Blueprints:** Dynamically generates track-based study plans powered by external AI APIs. Choose from built-in tracks (Web Dev, Machine Learning, UI/UX, Cybersecurity, Cloud, etc.) or just type your **Custom** track.
-- **Pivot/Replan Mechanism:** Fall behind or want to shift gears? The *Replan* feature cleanly wipes your current active tasks and generates a brand-new timeline using a custom instruction or a YouTube link, all without merging duplicate nodes!
+- **"Flow State" Immersive Mode:** Cinematic, jet-black full-screen focus session. It hides the sidebar/nav, centers a glowing Pomodoro timer, isolates a single active task, and provides an integrated **"Play Lofi Beats"** audio player for deep, distraction-free work.
+- **"Share to LinkedIn" (Proof of Work):** Hit 100% track completion to unlock a sleek celebration animation. Instantly generates and downloads a beautifully styled custom image card (via `html2canvas`) showcasing your streak, mastery, and "StudyFlow MVP" status to share on LinkedIn.
+- **The "Panic Pivot" (AI Magic):** Overwhelmed? Just tell the AI Chatbot *"Bhai kuch samajh nahi aa raha, reset the plan to basics"*. The AI will automatically trigger the Pivot API, instantly wiping your stale tasks and cleanly regenerating a foundational track live on the dashboard!
+- **Micro-Interactions & Sound Design:** Premium auditory feedback! Get a satisfying 'ding' when completing a task, and hear a premium coin drop sound when you successfully sync your GitHub commits.
+- **Voice-Activated AI Motivator (TTS):** The AI Chatbot uses the Web Speech API to provide audio feedback and read messages aloud in different built-in personas (e.g., David Goggins mode).
+- **Smart Study Material (Flashcards):** Generate quick flip-to-reveal micro-learning flashcards instantly from any topic or a YouTube link.
+- **Contextual 1-Click Resource Fetching:** Smart task cards with a "Find Resources" button that instantly fetches relevant YouTube tutorials and articles for the active module.
+- **Ghost Mode Leaderboard:** Compete against simulated "ghosts" of top learners in a live-updating gamified leaderboard.
+- **Emotional Analytics (Heatmap):** A sleek, high-contrast GitHub-style consistency continuous heatmap to visually track daily study streaks.
 - **Project Archives:** Automatically keeps a history of your past modules, tasks, and completion rates so no progress is ever lost.
 - **Clean Slate Testing:** Highly customized for demos! Reload the page, and the session resets dynamically so you can demo multiple user journeys frictionlessly.
 - **GitHub Sync & Gamification:** Connect your GitHub to see real-time repo activity and earn bonus study coins instantly. Live stats track Heatmaps, Streak points, and mastery scores.
-- **AI Chatbot Motivator:** Offers direct guidance, gently roasts, pushes deadlines, or gives strict motivation based on your selected persona via a slick floating chat widget!
 
 ## 💻 Tech Stack
 
@@ -38,7 +45,7 @@ App will be accessible at \http://localhost:5173\
 
 ## 🔌 Core API Endpoints
 
-- \POST /api/learners/login\ - **NEW!** Quick resume for returning users using Name verification. 
+- \POST /api/learners/login\ - **NEW!** Quick resume for returning users using Name verification.
 - \POST /api/learners/onboard\ - Complete learner setup & new AI plan generation.
 - \POST /api/learners/:id/replan\ - Pivot the current active plan safely to a new goal (cleans up old tasks magically!).
 - \GET /api/dashboard/:id\ - Fetch live user profile and granular module stats.
@@ -48,10 +55,11 @@ App will be accessible at \http://localhost:5173\
 
 1. **Start Fresh:** Simply reload the page. The app removes the stale state.
 2. **Onboard User A:** Click "Sign Up", select the new **Custom** track option, and generate a course. Show the roadmap & tasks.
-3. **Show Pivot:** Navigate to Pivot/Replan, drop a YouTube link, and watch it generate fresh tasks without carrying over the obsolete ones.
-4. **Log completely out:** Refresh the page again.
-5. **Quick Login:** Toggle to **Login**, enter User A's exact name, and show how easily returning users bypass the large form!
-6. **Show Motivator & GitHub:** Open settings, paste a GitHub handle, claim coins. Chat with the AI Motivator widget for personalized help!
+3. **Immersive "Flow State":** Click "Enter Flow State" to demonstrate the cinematic, distraction-free full-screen mode and toggle the embedded Lofi beats!
+4. **The "Panic Pivot" (AI Magic Demo):** Open the chat widget and type: *"Bhai kuch samajh nahi aa raha, reset the plan to basics"*. Watch the AI automatically intercept the intent, trigger the Pivot API, and regenerate a new beginner-friendly plan on the fly!
+5. **Micro-Interactions Demo:** Mark a task as complete to trigger the satisfying *ding* sound. Then, open settings, paste a GitHub handle, and sync activity to showcase the custom coin-drop sound effect.
+6. **Share Milestone:** If time permits, mark tasks until reaching 100% completion to reveal the "Share Milestone" button, generating a downloadable PNG card for LinkedIn!
+7. **Quick Resume Demo:** Reload the page to clear state, click **Login**, enter User A's exact name, and show the lightning-fast resume bypass flow!
 
 ## 🛠️ Future Upgrades (Post-Hackathon)
 
@@ -59,3 +67,4 @@ App will be accessible at \http://localhost:5173\
 - Full OAuth 2.0 Integration (Google/GitHub/Discord login).
 - Real web-sockets for live collaborative studying & leaderboards.
 - Native mobile wrapper via React Native / Expo.
+

@@ -31,8 +31,8 @@
     {
       "id": "learner_PdeopwkH",
       "name": "kunal gupta",
-      "track": "pinterest",
-      "goal": "hot to earn money from pinterest",
+      "track": "ai masterclass",
+      "goal": "learn chatgpt prompt engineering",
       "weeklyHours": 10,
       "consistency": 65,
       "createdAt": "2026-03-28T13:18:25.670Z",
@@ -92,60 +92,172 @@
             }
           ],
           "archivedAt": "2026-03-28T22:06:51.786Z"
+        },
+        {
+          "id": "history_AlA0FPfK",
+          "track": "pinterest",
+          "goal": "hot to earn money from pinterest",
+          "plan": [
+            {
+              "id": "module_vQPHVm",
+              "module": "Intro to: I Tried To Earn $1000 On PINTEREST in 24 HOURS (With PROOF)",
+              "track": "pinterest",
+              "plannedHours": 4,
+              "startDate": "2026-03-29",
+              "endDate": "2026-04-02"
+            },
+            {
+              "id": "module_xwqvqq",
+              "module": "Core Breakdown (AnalyzingWit)",
+              "track": "pinterest",
+              "plannedHours": 4,
+              "startDate": "2026-04-03",
+              "endDate": "2026-04-07"
+            },
+            {
+              "id": "module_KMOQoZ",
+              "module": "Practical Applications",
+              "track": "pinterest",
+              "plannedHours": 4,
+              "startDate": "2026-04-08",
+              "endDate": "2026-04-12"
+            },
+            {
+              "id": "module_qVFB7F",
+              "module": "Advanced Concepts",
+              "track": "pinterest",
+              "plannedHours": 4,
+              "startDate": "2026-04-13",
+              "endDate": "2026-04-17"
+            },
+            {
+              "id": "module_qVoED3",
+              "module": "Mini Project: I Tried To Earn $1000 On PINTEREST in 24 HOURS (With PROOF)",
+              "track": "pinterest",
+              "plannedHours": 4,
+              "startDate": "2026-04-18",
+              "endDate": "2026-04-22"
+            },
+            {
+              "id": "module_86p1xj",
+              "module": "Final Review & Quiz",
+              "track": "pinterest",
+              "plannedHours": 4,
+              "startDate": "2026-04-23",
+              "endDate": "2026-04-27"
+            }
+          ],
+          "archivedAt": "2026-03-29T07:13:00.916Z"
+        },
+        {
+          "id": "history_cdOHHgXh",
+          "track": "ai masterclass",
+          "goal": "learn chatgpt prompt engineering",
+          "plan": [
+            {
+              "id": "module_fI_-mf",
+              "module": "Intro to: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-03-29",
+              "endDate": "2026-04-02"
+            },
+            {
+              "id": "module_arxjcO",
+              "module": "Core Breakdown (Ayushman Pandita)",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-03",
+              "endDate": "2026-04-07"
+            },
+            {
+              "id": "module_ac8bey",
+              "module": "Practical Applications",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-08",
+              "endDate": "2026-04-12"
+            },
+            {
+              "id": "module_0afqrE",
+              "module": "Advanced Concepts",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-13",
+              "endDate": "2026-04-17"
+            },
+            {
+              "id": "module_w6Y6Y9",
+              "module": "Mini Project: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-18",
+              "endDate": "2026-04-22"
+            },
+            {
+              "id": "module_j7WCcu",
+              "module": "Final Review & Quiz",
+              "track": "ai masterclass",
+              "plannedHours": 4,
+              "startDate": "2026-04-23",
+              "endDate": "2026-04-27"
+            }
+          ],
+          "archivedAt": "2026-03-29T08:26:30.344Z"
         }
       ],
       "plan": [
         {
-          "id": "module_vQPHVm",
-          "module": "Intro to: I Tried To Earn $1000 On PINTEREST in 24 HOURS (With PROOF)",
-          "track": "pinterest",
+          "id": "module_XQXkOI",
+          "module": "Learning Foundations",
+          "track": "ai masterclass",
           "plannedHours": 4,
           "startDate": "2026-03-29",
           "endDate": "2026-04-02"
         },
         {
-          "id": "module_xwqvqq",
-          "module": "Core Breakdown (AnalyzingWit)",
-          "track": "pinterest",
+          "id": "module_p867M6",
+          "module": "Core Concepts",
+          "track": "ai masterclass",
           "plannedHours": 4,
           "startDate": "2026-04-03",
           "endDate": "2026-04-07"
         },
         {
-          "id": "module_KMOQoZ",
-          "module": "Practical Applications",
-          "track": "pinterest",
+          "id": "module_10gaiF",
+          "module": "Hands-on Practice",
+          "track": "ai masterclass",
           "plannedHours": 4,
           "startDate": "2026-04-08",
           "endDate": "2026-04-12"
         },
         {
-          "id": "module_qVFB7F",
-          "module": "Advanced Concepts",
-          "track": "pinterest",
+          "id": "module_WXHeyJ",
+          "module": "Mini Project",
+          "track": "ai masterclass",
           "plannedHours": 4,
           "startDate": "2026-04-13",
           "endDate": "2026-04-17"
         },
         {
-          "id": "module_qVoED3",
-          "module": "Mini Project: I Tried To Earn $1000 On PINTEREST in 24 HOURS (With PROOF)",
-          "track": "pinterest",
+          "id": "module_WathY4",
+          "module": "Mock Assessment",
+          "track": "ai masterclass",
           "plannedHours": 4,
           "startDate": "2026-04-18",
           "endDate": "2026-04-22"
         },
         {
-          "id": "module_86p1xj",
-          "module": "Final Review & Quiz",
-          "track": "pinterest",
+          "id": "module_8nHKad",
+          "module": "Portfolio Polish",
+          "track": "ai masterclass",
           "plannedHours": 4,
           "startDate": "2026-04-23",
           "endDate": "2026-04-27"
         }
       ],
       "github": "Python-kunal",
-      "coins": 20
+      "coins": 190
     },
     {
       "id": "learner_SMxNrH_K",
@@ -2517,60 +2629,60 @@
       "score": null
     },
     {
-      "id": "FOo7wPPV_OhMuJy7nzUO7",
+      "id": "MFijMLHBHQyiKexrO4PIw",
       "learnerId": "learner_PdeopwkH",
-      "title": "Complete Intro to: I Tried To Earn $1000 On PINTEREST in 24 HOURS (With PROOF)",
-      "module": "Intro to: I Tried To Earn $1000 On PINTEREST in 24 HOURS (With PROOF)",
+      "title": "Complete Learning Foundations",
+      "module": "Learning Foundations",
       "dueDate": "2026-04-02",
       "estimatedMinutes": 240,
       "completed": false,
       "score": null
     },
     {
-      "id": "YFlfv3JkgJrym4yTuBman",
+      "id": "_TOFgHAO4G7ipFZbFGH22",
       "learnerId": "learner_PdeopwkH",
-      "title": "Complete Core Breakdown (AnalyzingWit)",
-      "module": "Core Breakdown (AnalyzingWit)",
+      "title": "Complete Core Concepts",
+      "module": "Core Concepts",
       "dueDate": "2026-04-07",
       "estimatedMinutes": 240,
       "completed": false,
       "score": null
     },
     {
-      "id": "9n_8Q7P26u4UPcJ6Kccyz",
+      "id": "fLi8Ewrxi_Hfksv6RndkC",
       "learnerId": "learner_PdeopwkH",
-      "title": "Complete Practical Applications",
-      "module": "Practical Applications",
+      "title": "Complete Hands-on Practice",
+      "module": "Hands-on Practice",
       "dueDate": "2026-04-12",
       "estimatedMinutes": 240,
       "completed": false,
       "score": null
     },
     {
-      "id": "DhNelbLWcan0JvvIDxBZd",
+      "id": "7-NIgcskEZl45fEMH4jsN",
       "learnerId": "learner_PdeopwkH",
-      "title": "Complete Advanced Concepts",
-      "module": "Advanced Concepts",
+      "title": "Complete Mini Project",
+      "module": "Mini Project",
       "dueDate": "2026-04-17",
       "estimatedMinutes": 240,
       "completed": false,
       "score": null
     },
     {
-      "id": "lMotH-BDFRaVr6DIUgNSx",
+      "id": "sHuvoOQ4FFaFJ_no4IAXD",
       "learnerId": "learner_PdeopwkH",
-      "title": "Complete Mini Project: I Tried To Earn $1000 On PINTEREST in 24 HOURS (With PROOF)",
-      "module": "Mini Project: I Tried To Earn $1000 On PINTEREST in 24 HOURS (With PROOF)",
+      "title": "Complete Mock Assessment",
+      "module": "Mock Assessment",
       "dueDate": "2026-04-22",
       "estimatedMinutes": 240,
       "completed": false,
       "score": null
     },
     {
-      "id": "UyqPBFgXnE0pBVe_j6hRy",
+      "id": "cu9jj5Nm11zRJtl6yYgM3",
       "learnerId": "learner_PdeopwkH",
-      "title": "Complete Final Review & Quiz",
-      "module": "Final Review & Quiz",
+      "title": "Complete Portfolio Polish",
+      "module": "Portfolio Polish",
       "dueDate": "2026-04-27",
       "estimatedMinutes": 240,
       "completed": false,
@@ -8149,6 +8261,12 @@
       "date": "2026-03-29",
       "minutes": 90,
       "completionRate": 50
+    },
+    {
+      "learnerId": "learner_PdeopwkH",
+      "date": "2026-03-29",
+      "minutes": 240,
+      "completionRate": 100
     }
   ]
 }

@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useRef } from 'react';
 import axios from 'axios';
 import * as Motion from 'framer-motion';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import html2canvas from 'html2canvas';
 
 const api = axios.create({ baseURL: '/' });
 
@@ -33,6 +34,33 @@ function App() {
   const [message, setMessage] = useState('');
   const [isFlowState, setIsFlowState] = useState(false);
   const [timer, setTimer] = useState(25 * 60);
+  const [isPlayingLofi, setIsPlayingLofi] = useState(false);
+  const lofiAudioRef = useRef(null);
+  const milestoneRef = useRef(null);
+
+  async function handleShareMilestone() {
+    if (!milestoneRef.current) return;
+    try {
+      const canvas = await html2canvas(milestoneRef.current, { backgroundColor: '#111827' });
+      const image = canvas.toDataURL("image/png");
+      const a = document.createElement('a');
+      a.href = image;
+      a.download = 'StudyFlow-Milestone.png';
+      a.click();
+      setToastMessage("Milestone card downloaded! Share it on LinkedIn to build your Proof of Work. 🚀");
+      setTimeout(() => setToastMessage(null), 5000);
+    } catch(err) {
+      console.error(err);
+    }
+  }
+
+  useEffect(() => {
+    if (lofiAudioRef.current) {
+       if (isPlayingLofi) lofiAudioRef.current.play().catch(e => console.log(e));
+       else lofiAudioRef.current.pause();
+    }
+  }, [isPlayingLofi]);
+
   const [activeTab, setActiveTab] = useState('dashboard');
   const [isFlashing, setIsFlashing] = useState(false);
   const [isGeneratingPlan, setIsGeneratingPlan] = useState(false);
@@ -46,6 +74,38 @@ function App() {
   const [flippedCards, setFlippedCards] = useState({});
   const [flashcardTopic, setFlashcardTopic] = useState('');
   const [isGeneratingCards, setIsGeneratingCards] = useState(false);
+
+  // New Features State
+  const [taskResources, setTaskResources] = useState({});
+  const mockLeaderboard = useMemo(() => [
+    { name: 'AlexTheDev', points: 4320, streak: 12, live: true },
+    { name: 'SarahCodex', points: 3850, streak: 9, live: false },
+    { name: 'ByteMaster', points: 3100, streak: 5, live: true },
+    { name: 'CodeNinja', points: 2940, streak: 4, live: false }
+  ], []);
+
+  function speakText(text) {
+    if (!('speechSynthesis' in window)) {
+      alert('Your browser does not support text to speech!');
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(text);
+    if (persona === 'David Goggins') {
+        utterance.pitch = 0.5;
+        utterance.rate = 1.1;
+    }
+    window.speechSynthesis.speak(utterance);
+  }
+
+  async function fetchResources(taskId, moduleName) {
+    setTaskResources(prev => ({ ...prev, [taskId]: { loading: true, data: null } }));
+    try {
+      const response = await api.post('/api/resources', { topic: moduleName });
+      setTaskResources(prev => ({ ...prev, [taskId]: { loading: false, data: response.data.resources } }));
+    } catch (err) {
+      setTaskResources(prev => ({ ...prev, [taskId]: { loading: false, data: [] } }));
+    }
+  }
 
   useEffect(() => { let interval; if (isFlowState && timer > 0) { interval = setInterval(() => setTimer((t) => t - 1), 1000); } return () => clearInterval(interval); }, [isFlowState, timer]);
 
@@ -153,6 +213,11 @@ function App() {
   async function updateTask(taskId, payload) {
     if (!dashboard?.learner?.id) return;
     try {
+      if (payload.completed) {
+        const ding = new Audio('https://actions.google.com/sounds/v1/alarms/beep_short.ogg');
+        ding.volume = 0.5;
+        ding.play().catch(e => console.log(e));
+      }
       const response = await api.patch(`/api/tasks/${taskId}`, { learnerId: dashboard.learner.id, ...payload });
       if (response.data.pivotTriggered) {
         setToastMessage(response.data.pivotMessage);
@@ -197,6 +262,11 @@ function App() {
       } else {
         const lastDate = new Date(lastPush.created_at).toLocaleDateString();
         setMessage(`Automated GitHub Check: Push found on ${lastDate}! Rewarding +20 Coins ✨`);
+
+        const coinSound = new Audio('https://actions.google.com/sounds/v1/water/glass_water_pour.ogg');
+        coinSound.volume = 0.8;
+        coinSound.play().catch(e => console.log(e));
+
         updateSetting('coins', (dashboard.learner.coins || 0) + 20);
         setTimeout(() => setMessage(''), 4000);
       }
@@ -209,6 +279,23 @@ function App() {
     const userMsg = chatInput.trim();
     setChatMessages((prev) => [...prev, { sender: 'user', text: userMsg }]);
     setChatInput('');
+
+    if (userMsg.toLowerCase().includes("reset the plan to basics") || userMsg.toLowerCase().includes("kuch samajh nahi aa raha")) {
+      setChatMessages((prev) => [...prev, { sender: 'ai', text: "Bohot pressure lag raha hai? Ruko, main basics se ek nayi track generate karta hu... 💥 Pivot Triggered!" }]);
+      try {
+        await api.post(`/api/learners/${activeLearnerId}/replan`, {
+          instruction: 'Reset the plan to absolute basics and fundamentals. The user is overwhelmed.',
+          goal: dashboard?.learner?.goal || 'Basics'
+        });
+        await fetchDashboard(activeLearnerId);
+        setToastMessage("AI safely wiped your old tracker and created a basic roadmap for you.");
+        setTimeout(() => setToastMessage(null), 5000);
+      } catch (e) {
+        setChatMessages((prev) => [...prev, { sender: 'ai', text: "Pivot failed due to network." }]);
+      }
+      return;
+    }
+
     try {
       const res = await api.post('/api/chat', { learnerId: activeLearnerId, message: userMsg });
       setChatMessages((prev) => [...prev, { sender: 'ai', text: res.data.reply }]);
@@ -249,18 +336,32 @@ function App() {
   if (isFlowState) {
     const nextTask = dashboard?.tasks?.find(t => !t.completed);
     return (
-      <div className='flow-state-shell'>
+      <div className='flow-state-shell' style={{ position:'fixed', top:0, left:0, width:'100vw', height:'100vh', zIndex: 9999, display:'flex', alignItems:'center', justifyContent:'center', background: '#0a0a0a', color:'#fff' }}>
         <div className='ambient ambient-one' /> <div className='ambient ambient-two' />
-        <div className='flow-mode-container'>
-          <Motion.motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className='flow-card'>
-            <h2>Flow State Active</h2>
-            <div className='timer-display'>{formatTime(timer)}</div>
-            {nextTask ? ( <div className='focused-task'><h3>Focusing on:</h3><h2>{nextTask.title}</h2><p>{nextTask.module}</p></div> ) : ( <p>All tasks completed for now.</p> )}
-            <div style={{ marginTop: '2rem' }}>
-              <button onClick={() => setIsFlowState(false)} className='ghost'>Exit Flow State</button>
+        <div className='flow-mode-container' style={{ textAlign:'center', zIndex: 10 }}>
+          <Motion.motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className='flow-card' style={{ background: 'rgba(255,255,255,0.05)', padding: '50px', borderRadius:'24px', border:'1px solid rgba(255,255,255,0.1)', backdropFilter:'blur(10px)', minWidth: '400px' }}>
+            <h2 style={{ fontSize: '1.2rem', opacity: 0.7, marginBottom:'20px', textTransform:'uppercase', letterSpacing:'2px' }}>Deep Focus Session</h2>
+            <div className='timer-display' style={{ fontSize: '6rem', fontWeight:'bold', letterSpacing:'-2px', marginBottom: '30px', color: 'var(--primary)', textShadow: '0 0 20px rgba(255, 126, 63, 0.4)' }}>{formatTime(timer)}</div>
+
+            {nextTask ? (
+              <div className='focused-task' style={{ background:'rgba(0,0,0,0.3)', padding:'20px', borderRadius:'12px', marginBottom:'40px' }}>
+                <p style={{ opacity: 0.6, fontSize:'0.85rem', marginBottom:'5px', textTransform: 'uppercase' }}>Current Mission</p>
+                <h3 style={{ fontSize:'1.4rem', margin: '0 0 5px 0' }}>{nextTask.title}</h3>
+                <p style={{ color:'var(--muted)', margin: 0 }}>{nextTask.module}</p>
+              </div>
+            ) : ( <p>All tasks completed for now. Great job!</p> )}
+
+            <div style={{ display: 'flex', gap: '15px', justifyContent:'center', marginTop: '2rem' }}>
+              <button
+                onClick={() => setIsPlayingLofi(!isPlayingLofi)}
+                style={{ background: isPlayingLofi ? 'var(--primary)' : 'rgba(255,255,255,0.1)', color: '#fff', border:'none', padding:'12px 24px', borderRadius:'8px', cursor:'pointer', fontWeight: 'bold' }}>
+                {isPlayingLofi ? '🎧 Pause Lofi' : '🎧 Play Lofi Beats'}
+              </button>
+              <button onClick={() => { setIsFlowState(false); setIsPlayingLofi(false); }} className='ghost' style={{ padding:'12px 24px', fontWeight: 'bold' }}>End Session</button>
             </div>
           </Motion.motion.div>
         </div>
+        <audio ref={lofiAudioRef} src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" loop />
       </div>
     );
   }
@@ -273,9 +374,40 @@ function App() {
             <h2>Live Learner Snapshot</h2>
             {!loading && dashboard ? (
               <>
-                <div className="learner-meta">
+                <div className="learner-meta" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <div>
                     <h3>{dashboard.learner.name}</h3>
                     <p>{dashboard.learner.track} • Goal: {dashboard.learner.goal}</p>
+                  </div>
+                  {dashboard.stats.completionRate >= 100 && (
+                    <div>
+                      {/* Hidden milestone card strictly for rendering */}
+                      <div style={{ position: 'absolute', top: '-9999px', left: '-9999px' }}>
+                        <div ref={milestoneRef} style={{ width: '600px', padding: '40px', background: 'linear-gradient(135deg, #111827 0%, #1f2937 100%)', color: '#fff', borderRadius: '16px', fontFamily: 'sans-serif', border: '2px solid #ff7e3f' }}>
+                           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                             <h1 style={{ margin: 0, color: '#ff7e3f' }}>StudyFlow MVP</h1>
+                             <span style={{ background: '#2ec4b6', padding: '4px 12px', borderRadius: '20px', fontWeight: 'bold' }}>100% Completed</span>
+                           </div>
+                           <h2 style={{ fontSize: '2rem', marginTop: '30px' }}>{dashboard.learner.name}</h2>
+                           <p style={{ fontSize: '1.2rem', color: '#adb5bd' }}>Successfully conquered the <strong>{dashboard.learner.track}</strong> track!</p>
+                           <div style={{ display: 'flex', gap: '20px', marginTop: '30px' }}>
+                             <div style={{ background: 'rgba(255,255,255,0.1)', padding: '15px', borderRadius: '8px', flex:1 }}>
+                               <p style={{ margin:0, color: '#adb5bd' }}>Streak</p>
+                               <h3 style={{ margin:0, fontSize: '1.5rem' }}>{dashboard.stats.streak} Days 🔥</h3>
+                             </div>
+                             <div style={{ background: 'rgba(255,255,255,0.1)', padding: '15px', borderRadius: '8px', flex:1 }}>
+                               <p style={{ margin:0, color: '#adb5bd' }}>Tasks Mastered</p>
+                               <h3 style={{ margin:0, fontSize: '1.5rem' }}>{dashboard.stats.completed} 🎯</h3>
+                             </div>
+                           </div>
+                        </div>
+                      </div>
+
+                      <button onClick={handleShareMilestone} className="primary" style={{ background: 'linear-gradient(135deg, #0077b5, #00a0dc)', boxShadow: '0 4px 15px rgba(0,119,181,0.4)', display: 'flex', alignItems: 'center', gap: '8px', border: 'none', cursor: 'pointer' }}>
+                         <span style={{ fontSize: '1.2rem' }}>🏆</span> Share Milestone
+                      </button>
+                    </div>
+                  )}
                 </div>
                 <div className="stats-grid">
                   <StatCard idx={1} label="Completion" value={`${dashboard.stats.completionRate}%`} accent="#ff7e3f" />
@@ -352,8 +484,25 @@ function App() {
                     <p>{task.module} • Due {task.dueDate}</p>
                   </div>
                   <div className="task-actions">
+                    <button className="ghost" style={{ marginRight: '8px' }} onClick={() => fetchResources(task.id, task.module)}>
+                      {taskResources[task.id]?.loading ? 'Searching...' : 'Find Resources'}
+                    </button>
                     <button onClick={() => updateTask(task.id, { completed: !task.completed })}>{task.completed ? 'Undo' : 'Complete'}</button>
                   </div>
+                  {taskResources[task.id]?.data && (
+                    <div style={{ marginTop: '10px', background: 'rgba(0,0,0,0.2)', padding: '10px', borderRadius: '8px', width: '100%' }}>
+                      <strong style={{ fontSize: '0.85rem', color: 'var(--blue)' }}>Top Resources:</strong>
+                      <ul style={{ listStyle: 'none', padding: 0, margin: '8px 0 0 0', fontSize: '0.85rem' }}>
+                        {taskResources[task.id].data.map(res => (
+                          <li key={res.id} style={{ marginBottom: '6px' }}>
+                            <a href={res.url} target="_blank" rel="noreferrer" style={{ color: 'var(--text)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                              {res.type === 'video' ? '▶️' : '📄'} {res.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </article>
               )})}
             </div>
@@ -398,7 +547,7 @@ function App() {
                 </button>
               </div>
 
-            {flashcards.length > 0 && (
+            {flashcards.length > 0 ? (
               <div className="flashcards-wrapper">
                 {flashcards.map((fc) => (
                   <div key={fc.id} className={`flashcard ${flippedCards[fc.id] ? 'flipped' : ''}`} onClick={() => toggleCard(fc.id)}>
@@ -409,6 +558,11 @@ function App() {
                   </div>
                 ))}
               </div>
+            ) : (
+                <div style={{ marginTop: '20px', padding: '50px 20px', border: '2px dashed rgba(255,255,255,0.15)', borderRadius: '12px', textAlign: 'center', color: 'var(--muted)', background: 'rgba(255,255,255,0.02)' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.5, marginBottom: '10px' }}><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                  <p style={{ margin: 0 }}>Generated flashcards will appear here</p>
+                </div>
             )}
           </div>        </Motion.motion.div>
       );
@@ -457,7 +611,54 @@ function App() {
       );
     }
 
-    if (activeTab === 'settings') {
+    if (activeTab === 'leaderboard') {
+        return (
+           <Motion.motion.div className="bento-grid" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
+              <div className="panel col-span-12" style={{ position: 'relative', overflow: 'hidden' }}>
+                 <h2>Global Leaderboard <span style={{ color: 'var(--green)', fontSize: '0.9rem', marginLeft: '10px' }}>● Live Sync</span></h2>
+                 <p style={{ color: 'var(--muted)', marginBottom: '20px' }}>Compete with learners around the world. (Ghost Mode Enabled)</p>
+
+                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                   {mockLeaderboard.map((user, idx) => (
+                     <div key={user.name} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: idx === 0 ? '1px solid var(--blue)' : '1px solid transparent' }}>
+                       <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                         <span style={{ fontSize: '1.5rem', fontWeight: 'bold', width: '30px', color: idx === 0 ? '#ffb347' : 'var(--muted)' }}>#{idx + 1}</span>
+                         <div>
+                           <h3 style={{ margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                             {user.name}
+                             {user.live && <span style={{ display: 'inline-block', width: '8px', height: '8px', background: 'var(--green)', borderRadius: '50%', boxShadow: '0 0 8px var(--green)' }} title="Currently active" />}
+                           </h3>
+                           <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{user.streak} Day Tracker</span>
+                         </div>
+                       </div>
+                       <div style={{ textAlign: 'right' }}>
+                         <h3 style={{ margin: 0, color: 'var(--blue)' }}>{user.points.toLocaleString()} pts</h3>
+                         <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>Mastery</span>
+                       </div>
+                     </div>
+                   ))}
+
+                   {dashboard && (
+                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px', background: 'rgba(255,255,255,0.08)', borderRadius: '12px', border: '1px dashed var(--muted)', marginTop: '10px' }}>
+                       <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                         <span style={{ fontSize: '1.5rem', fontWeight: 'bold', width: '30px', color: 'var(--muted)' }}>#--</span>
+                         <div>
+                           <h3 style={{ margin: 0 }}>{dashboard.learner.name} (You)</h3>
+                           <span style={{ fontSize: '0.85rem', color: 'var(--muted)' }}>{dashboard.learner.streakDays} Day Tracker</span>
+                         </div>
+                       </div>
+                       <div style={{ textAlign: 'right' }}>
+                         <h3 style={{ margin: 0, color: 'var(--text)' }}>{dashboard.learner.coins.toLocaleString()} pts</h3>
+                       </div>
+                     </div>
+                   )}
+                 </div>
+              </div>
+           </Motion.motion.div>
+        );
+      }
+
+      if (activeTab === 'settings') {
       return (
          <Motion.motion.div className="bento-grid" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
             <div className="panel col-span-8">
@@ -515,6 +716,7 @@ function App() {
         <div className="brand"><div className="brand-dot"/> StudyFlow</div>
         <nav className="nav-links">
           <div className={`nav-item ${activeTab === 'dashboard' ? 'active' : ''}`} onClick={() => setActiveTab('dashboard')}>📊 Dashboard</div>
+          <div className={`nav-item ${activeTab === 'leaderboard' ? 'active' : ''}`} onClick={() => setActiveTab('leaderboard')}>🏆 Leaderboard <span style={{fontSize:'0.6rem', background:'var(--blue)', padding:'2px 4px', borderRadius:'4px', marginLeft:'4px', color:'white'}}>LIVE</span></div>
           <div className={`nav-item ${activeTab === 'timeline' ? 'active' : ''}`} onClick={() => setActiveTab('timeline')}>📅 Timeline</div>
           <div className={`nav-item ${activeTab === 'archives' ? 'active' : ''}`} onClick={() => setActiveTab('archives')}>🗂️ Archives</div>
           <div className={`nav-item ${activeTab === 'settings' ? 'active' : ''}`} onClick={() => setActiveTab('settings')}>⚙️ Settings</div>
@@ -706,7 +908,14 @@ function App() {
             </div>
             <div className="chat-messages">
               {chatMessages.map((m, i) => (
-                <div key={i} className={`chat-message ${m.sender}`}>{m.text}</div>
+                <div key={i} className={`chat-message ${m.sender}`} style={{ display: 'flex', alignItems: 'center', justifyContent: m.sender === 'ai' ? 'flex-start' : 'flex-end' }}>
+                  {m.text}
+                  {m.sender === 'ai' && (
+                    <button type="button" onClick={() => speakText(m.text)} style={{ background: 'transparent', border: 'none', cursor: 'pointer', marginLeft: '8px', padding: 0 }} title="Listen">
+                      🔊
+                    </button>
+                  )}
+                </div>
               ))}
             </div>
             <form className="chat-input-area" onSubmit={handleChatSubmit}>

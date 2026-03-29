@@ -322,13 +322,13 @@ button.primary:hover { background: linear-gradient(120deg, #ffcd70, #ffa579); }
 .flow-card { background: var(--surface); border: 1px solid rgba(255, 255, 255, 0.15); padding: 40px; border-radius: 24px; backdrop-filter: blur(10px); margin: 0 20px; }
 .timer-display { font-family: 'Space Grotesk', sans-serif; font-size: 5rem; font-weight: 700; background: linear-gradient(120deg, #ffb347, #ff7e3f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 20px 0; }
 /* ------------------------
-   NEW EXPERIMENTAL FEATURES 
+   NEW EXPERIMENTAL FEATURES
 --------------------------- */
 
 /* Heatmap */
 .heat-grid { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 1rem; }
-.heat-box { width: 14px; height: 14px; border-radius: 3px; background: #2a2a2a; }
-.heat-box.level-0 { background: #161b22; }
+.heat-box { width: 14px; height: 14px; border-radius: 3px; background: #373c47; }
+.heat-box.level-0 { background: #373c47; }
 .heat-box.level-1 { background: #0e4429; }
 .heat-box.level-2 { background: #006d32; }
 .heat-box.level-3 { background: #26a641; }

@@ -492,6 +492,21 @@ app.post("/api/flashcards/generate", async (req, res) => {
   ]});
 });
 
+app.post("/api/resources", async (req, res) => {
+  const { topic } = req.body;
+  await new Promise(r => setTimeout(r, 1500)); // Simulate AI searching
+
+  const query = encodeURIComponent(topic + ' programming tutorial');
+  
+  res.json({
+    resources: [
+      { id: 1, type: 'video', title: `Top 5 ${topic} Concepts Explained`, url: `https://www.youtube.com/results?search_query=${query}` },
+      { id: 2, type: 'video', title: `Build a ${topic} Project in 20 Mins`, url: `https://www.youtube.com/results?search_query=${query}+project` },
+      { id: 3, type: 'article', title: `Advanced Guide to ${topic} (Medium)`, url: `https://medium.com/search?q=${encodeURIComponent(topic)}` }
+    ]
+  });
+});
+
 app.post("/api/motivate", (req, res) => {
   const { persona, type } = req.body; // type can be 'missed_day' or 'random'
 
