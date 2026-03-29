@@ -16,6 +16,11 @@
 
 * { box-sizing: border-box; }
 
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Sora", sans-serif;
@@ -23,6 +28,7 @@ body {
   background: linear-gradient(130deg, #090e19 0%, #0d1629 55%, #121127 100%);
   min-height: 100vh;
   overflow: hidden; /* Hide scroll for app-like feel, scroll inside panels */
+  overflow-x: hidden;
 }
 
 /* Modal Overlay */
@@ -77,6 +83,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: var(--sidebar-w);
+  flex-shrink: 0;
   background: rgba(10, 15, 27, 0.85);
   border-right: 1px solid var(--border);
   display: flex;
@@ -120,6 +127,7 @@ body {
   transition: all 0.2s;
   font-weight: 600;
   border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .nav-item:hover {
@@ -136,6 +144,7 @@ body {
 /* Main Content Area */
 .main-area {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   z-index: 10;
@@ -212,6 +221,7 @@ body {
   flex: 1;
   padding: 32px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .page-content::-webkit-scrollbar {
@@ -358,3 +368,150 @@ button.primary:hover { background: linear-gradient(120deg, #ffcd70, #ffa579); }
 .chat-input-area { display: flex; padding: 12px; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(0,0,0,0.2); }
 .chat-input-area input { flex: 1; background: var(--bg); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 8px 14px; color: #fff; outline: none; margin-right: 8px; }
 .chat-input-area button { background: var(--primary); border: none; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color:#fff; }
+
+@media (max-width: 900px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .app-layout {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 18px 14px 14px;
+    gap: 14px;
+  }
+
+  .brand {
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .nav-links::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 999px;
+  }
+
+  .nav-item {
+    flex: 0 0 auto;
+  }
+
+  .main-area {
+    overflow: visible;
+  }
+
+  .top-header {
+    height: auto;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .header-right {
+    width: 100%;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .page-content {
+    padding: 16px;
+  }
+
+  .message-box {
+    position: static;
+    transform: none;
+    max-width: none;
+    margin-bottom: 16px;
+  }
+
+  .bento-grid {
+    gap: 16px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .task-item {
+    flex-direction: column;
+  }
+
+  .task-actions {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .toast-notification {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: none;
+  }
+
+  .chat-widget {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .chat-window {
+    right: 0;
+    width: min(320px, calc(100vw - 32px));
+    height: min(400px, calc(100vh - 120px));
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .top-header {
+    padding: 14px;
+  }
+
+  .header-left,
+  .header-right,
+  .user-profile {
+    width: 100%;
+  }
+
+  .header-right > * {
+    max-width: 100%;
+  }
+
+  .flow-card {
+    padding: 28px 20px;
+  }
+
+  .timer-display {
+    font-size: 3.5rem;
+  }
+
+  .flashcard {
+    width: 100%;
+    max-width: 260px;
+  }
+}
