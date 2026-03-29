@@ -320,7 +320,8 @@ button.primary:hover { background: linear-gradient(120deg, #ffcd70, #ffa579); }
 .flow-state-shell { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: var(--bg); position: fixed; inset: 0; z-index: 10000; }
 .flow-mode-container { z-index: 10; text-align: center; width: 100%; max-width: 600px; }
 .flow-card { background: var(--surface); border: 1px solid rgba(255, 255, 255, 0.15); padding: 40px; border-radius: 24px; backdrop-filter: blur(10px); margin: 0 20px; }
-.timer-display { font-family: 'Space Grotesk', sans-serif; font-size: 5rem; font-weight: 700; background: linear-gradient(120deg, #ffb347, #ff7e3f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 20px 0; }
+.timer-display { font-family: 'Space Grotesk', sans-serif; font-size: 5rem; font-weight: 700; background: linear-gradient(120deg, #ffb347, #ff7e3f); -webkit-background-clip: text;
+  background-clip: text; -webkit-text-fill-color: transparent; margin: 20px 0; }
 /* ------------------------
    NEW EXPERIMENTAL FEATURES
 --------------------------- */

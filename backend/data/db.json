@@ -1585,6 +1585,67 @@
           "endDate": "2026-04-27"
         }
       ]
+    },
+    {
+      "id": "learner_KIvQUMB-",
+      "name": "Nitesh yadav",
+      "track": "AI tools",
+      "goal": "AI masterclass",
+      "weeklyHours": 4,
+      "github": null,
+      "consistency": 65,
+      "coins": 50,
+      "createdAt": "2026-03-29T08:56:21.289Z",
+      "plan": [
+        {
+          "id": "module_1SjPrF",
+          "module": "Intro to: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
+          "track": "AI tools",
+          "plannedHours": 2,
+          "startDate": "2026-03-29",
+          "endDate": "2026-04-02"
+        },
+        {
+          "id": "module_q37vWB",
+          "module": "Core Breakdown (Ayushman Pandita)",
+          "track": "AI tools",
+          "plannedHours": 2,
+          "startDate": "2026-04-03",
+          "endDate": "2026-04-07"
+        },
+        {
+          "id": "module_fg1fS6",
+          "module": "Practical Applications",
+          "track": "AI tools",
+          "plannedHours": 2,
+          "startDate": "2026-04-08",
+          "endDate": "2026-04-12"
+        },
+        {
+          "id": "module_sk3PDs",
+          "module": "Advanced Concepts",
+          "track": "AI tools",
+          "plannedHours": 2,
+          "startDate": "2026-04-13",
+          "endDate": "2026-04-17"
+        },
+        {
+          "id": "module_Ys7oYV",
+          "module": "Mini Project: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
+          "track": "AI tools",
+          "plannedHours": 2,
+          "startDate": "2026-04-18",
+          "endDate": "2026-04-22"
+        },
+        {
+          "id": "module_cPpLLW",
+          "module": "Final Review & Quiz",
+          "track": "AI tools",
+          "plannedHours": 2,
+          "startDate": "2026-04-23",
+          "endDate": "2026-04-27"
+        }
+      ]
     }
   ],
   "tasks": [
@@ -2685,6 +2746,66 @@
       "module": "Portfolio Polish",
       "dueDate": "2026-04-27",
       "estimatedMinutes": 240,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_5nBsm7BX",
+      "learnerId": "learner_KIvQUMB-",
+      "title": "Complete Intro to: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
+      "module": "Intro to: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
+      "dueDate": "2026-04-02",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_6EEvFN1H",
+      "learnerId": "learner_KIvQUMB-",
+      "title": "Complete Core Breakdown (Ayushman Pandita)",
+      "module": "Core Breakdown (Ayushman Pandita)",
+      "dueDate": "2026-04-07",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_jZBjYYLZ",
+      "learnerId": "learner_KIvQUMB-",
+      "title": "Complete Practical Applications",
+      "module": "Practical Applications",
+      "dueDate": "2026-04-12",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_lT-lp2TY",
+      "learnerId": "learner_KIvQUMB-",
+      "title": "Complete Advanced Concepts",
+      "module": "Advanced Concepts",
+      "dueDate": "2026-04-17",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_-kyB5Mk8",
+      "learnerId": "learner_KIvQUMB-",
+      "title": "Complete Mini Project: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
+      "module": "Mini Project: Ultimate AI Masterclass For Beginners [Free Course] - Learn ChatGPT, Prompt Engineering, AI Tools",
+      "dueDate": "2026-04-22",
+      "estimatedMinutes": 120,
+      "completed": false,
+      "score": null
+    },
+    {
+      "id": "task_1I4YrMHe",
+      "learnerId": "learner_KIvQUMB-",
+      "title": "Complete Final Review & Quiz",
+      "module": "Final Review & Quiz",
+      "dueDate": "2026-04-27",
+      "estimatedMinutes": 120,
       "completed": false,
       "score": null
     }
@@ -8267,6 +8388,552 @@
       "date": "2026-03-29",
       "minutes": 240,
       "completionRate": 100
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2025-12-29",
+      "minutes": 39,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2025-12-30",
+      "minutes": 125,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2025-12-31",
+      "minutes": 51,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-01",
+      "minutes": 49,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-02",
+      "minutes": 57,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-03",
+      "minutes": 101,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-04",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-05",
+      "minutes": 18,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-06",
+      "minutes": 73,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-07",
+      "minutes": 108,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-08",
+      "minutes": 64,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-09",
+      "minutes": 6,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-10",
+      "minutes": 108,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-11",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-12",
+      "minutes": 118,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-13",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-14",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-15",
+      "minutes": 108,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-16",
+      "minutes": 143,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-17",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-18",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-19",
+      "minutes": 91,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-20",
+      "minutes": 121,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-21",
+      "minutes": 95,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-22",
+      "minutes": 52,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-23",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-24",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-25",
+      "minutes": 125,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-26",
+      "minutes": 16,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-27",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-28",
+      "minutes": 120,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-29",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-30",
+      "minutes": 32,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-01-31",
+      "minutes": 108,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-01",
+      "minutes": 36,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-02",
+      "minutes": 109,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-03",
+      "minutes": 120,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-04",
+      "minutes": 63,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-05",
+      "minutes": 103,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-06",
+      "minutes": 16,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-07",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-08",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-09",
+      "minutes": 67,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-10",
+      "minutes": 118,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-11",
+      "minutes": 136,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-12",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-13",
+      "minutes": 13,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-14",
+      "minutes": 53,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-15",
+      "minutes": 53,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-16",
+      "minutes": 45,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-17",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-18",
+      "minutes": 30,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-19",
+      "minutes": 96,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-20",
+      "minutes": 115,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-21",
+      "minutes": 125,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-22",
+      "minutes": 51,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-23",
+      "minutes": 70,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-24",
+      "minutes": 133,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-25",
+      "minutes": 9,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-26",
+      "minutes": 76,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-27",
+      "minutes": 135,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-02-28",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-01",
+      "minutes": 49,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-02",
+      "minutes": 110,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-03",
+      "minutes": 14,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-04",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-05",
+      "minutes": 2,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-06",
+      "minutes": 51,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-07",
+      "minutes": 102,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-08",
+      "minutes": 1,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-09",
+      "minutes": 65,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-10",
+      "minutes": 61,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-11",
+      "minutes": 144,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-12",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-13",
+      "minutes": 143,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-14",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-15",
+      "minutes": 18,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-16",
+      "minutes": 84,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-17",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-18",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-19",
+      "minutes": 21,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-20",
+      "minutes": 74,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-21",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-22",
+      "minutes": 84,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-23",
+      "minutes": 126,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-24",
+      "minutes": 139,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-25",
+      "minutes": 0,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-26",
+      "minutes": 6,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-27",
+      "minutes": 65,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-28",
+      "minutes": 77,
+      "completionRate": 0
+    },
+    {
+      "learnerId": "learner_KIvQUMB-",
+      "date": "2026-03-29",
+      "minutes": 0,
+      "completionRate": 0
     }
   ]
 }

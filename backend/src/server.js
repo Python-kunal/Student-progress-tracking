@@ -35,7 +35,8 @@ async function buildPlan({ track, weeklyHours, consistency, youtubeLink }) {
       } else {
         modules = ["Video Analysis", "Core Concepts", "Hands-on Practice", "Advanced Usage", "Mini Project", "Review"];
       }
-    } catch (e) {
+    } catch (err) {
+      console.error('Fetch error:', err.message);
       modules = ["Video Analysis", "Core Concepts", "Hands-on Practice", "Advanced Usage", "Mini Project", "Review"];
     }
   } else if (youtubeLink) {
@@ -470,7 +471,7 @@ app.post("/api/flashcards/generate", async (req, res) => {
           { id: 5, q: `Self-Test: Explain to a junior!`, a: `Can you summarize what ${author} taught in under 3 sentences? Give it a try!` }
         ]});
       }
-    } catch (err) {}
+    } catch (err) { console.error('Error fetching oEmbed:', err.message); }
 
     // Fallback if URL is private or oEmebd fails
     return res.json({ flashcards: [
@@ -497,7 +498,7 @@ app.post("/api/resources", async (req, res) => {
   await new Promise(r => setTimeout(r, 1500)); // Simulate AI searching
 
   const query = encodeURIComponent(topic + ' programming tutorial');
-  
+
   res.json({
     resources: [
       { id: 1, type: 'video', title: `Top 5 ${topic} Concepts Explained`, url: `https://www.youtube.com/results?search_query=${query}` },
@@ -508,7 +509,7 @@ app.post("/api/resources", async (req, res) => {
 });
 
 app.post("/api/motivate", (req, res) => {
-  const { persona, type } = req.body; // type can be 'missed_day' or 'random'
+  const { persona } = req.body; // was { persona, type } but type is unused
 
   let msg = "Keep going!";
 

@@ -102,7 +102,7 @@ function App() {
     try {
       const response = await api.post('/api/resources', { topic: moduleName });
       setTaskResources(prev => ({ ...prev, [taskId]: { loading: false, data: response.data.resources } }));
-    } catch (err) {
+    } catch {
       setTaskResources(prev => ({ ...prev, [taskId]: { loading: false, data: [] } }));
     }
   }
@@ -270,7 +270,7 @@ function App() {
         updateSetting('coins', (dashboard.learner.coins || 0) + 20);
         setTimeout(() => setMessage(''), 4000);
       }
-    } catch (err) { setMessage(`GitHub Sync Failed: Make sure the username is correct.`); } finally { setLoading(false); }
+    } catch { setMessage(`GitHub Sync Failed: Make sure the username is correct.`); } finally { setLoading(false); }
   }
 
   async function handleChatSubmit(e) {
@@ -290,7 +290,7 @@ function App() {
         await fetchDashboard(activeLearnerId);
         setToastMessage("AI safely wiped your old tracker and created a basic roadmap for you.");
         setTimeout(() => setToastMessage(null), 5000);
-      } catch (e) {
+      } catch {
         setChatMessages((prev) => [...prev, { sender: 'ai', text: "Pivot failed due to network." }]);
       }
       return;
@@ -302,7 +302,7 @@ function App() {
       if (res.data.action === 'refresh') {
         fetchDashboard(activeLearnerId);
       }
-    } catch (err) {
+    } catch {
       setChatMessages((prev) => [...prev, { sender: 'ai', text: "Error connecting to AI." }]);
     }
   }
